@@ -6,7 +6,6 @@ theme: coming-soon
 params:
   title: "Golang Venezuela" 
   description: "Falta poco para el lanzamiento de nuestra nueva web"
-  favicon: "static/svg"
   message: "COMING SOON!" 
   release: "May 3, 2025"
   background: "" 
