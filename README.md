@@ -49,8 +49,8 @@ Distributed under the MIT License. See `LICENSE.md` for more information.
 [stars-url]: https://github.com/Golang-Venezuela/webpage/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Golang-Venezuela/webpage.svg?style=for-the-badge
 [issues-url]: https://github.com/Golang-Venezuela/webpage/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/Golang-Venezuela/webpage?style=for-the-badge
+[license-url]: https://github.com/Golang-Venezuela/webpage/blob/main/LICENSE
 [telegram-shield]: https://img.shields.io/badge/Telegram-2f00f0?style=for-the-badge&logo=Telegram&logoColor=white
 [telegram-url]: https://t.me/golangve
 [hugo]: https://img.shields.io/badge/Hugo-ff2c6c?style=for-the-badge&logo=Hugo&logoColor=white
