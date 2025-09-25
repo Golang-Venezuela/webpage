@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }}</title>
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta name="generator" content="Hugo">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: 'oklch(0.08 0.02 240)',
+            foreground: 'oklch(0.98 0.01 240)',
+            card: 'oklch(0.12 0.02 240)',
+            'card-foreground': 'oklch(0.95 0.01 240)',
+            primary: 'oklch(0.65 0.15 200)',
+            'primary-foreground': 'oklch(0.08 0.02 240)',
+            secondary: 'oklch(0.18 0.02 240)',
+            'secondary-foreground': 'oklch(0.95 0.01 240)',
+            muted: 'oklch(0.15 0.02 240)',
+            'muted-foreground': 'oklch(0.65 0.01 240)',
+            accent: 'oklch(0.55 0.18 180)',
+            'accent-foreground': 'oklch(0.08 0.02 240)',
+            border: 'oklch(0.22 0.02 240)',
+            input: 'oklch(0.18 0.02 240)',
+            ring: 'oklch(0.65 0.15 200)',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+        },
+      },
+    }
+  </script>
+  {{ $css := resources.Get "css/styles.css" | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $css.Permalink }}">
+</head>
+<body class="font-sans antialiased">
+  {{ block "main" . }}{{ end }}
+</body>
+</html>

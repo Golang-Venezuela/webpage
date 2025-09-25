@@ -1,0 +1,17 @@
+baseURL: https://golang-venezuela.github.io/webpage
+languageCode: es-ve
+title: Golang Venezuela
+theme: golang-ve
+
+params:
+  title: "Golang Venezuela"
+  description: "Comunidad venezolana dedicada a enseñar el lenguaje de programación Go. Cursos, tutoriales y recursos en español."
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/Golang-Venezuela"
+
+      params:
+        github:
+          enable: true
+          username: "Golang-Venezuela"
