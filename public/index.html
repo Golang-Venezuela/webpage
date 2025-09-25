@@ -1,59 +1,440 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta name="generator" content="Hugo 0.143.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golang Venezuela</title>
-    <link rel="canonical" href="http://localhost:1313/">
-    
-        <link rel="icon" type="image/x-icon" href="svg/icons/favicon.ico">
-    
-    <link rel="stylesheet" href="/css/styles.css">
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<html lang="es-ve" class="dark">
+<head><script src="/webpage/livereload.js?mindelay=10&amp;v=2&amp;port=33119&amp;path=webpage/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golang Venezuela</title>
+  <meta name="description" content="Comunidad venezolana dedicada a enseñar el lenguaje de programación Go. Cursos, tutoriales y recursos en español.">
+  <meta name="generator" content="Hugo">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: 'oklch(0.08 0.02 240)',
+            foreground: 'oklch(0.98 0.01 240)',
+            card: 'oklch(0.12 0.02 240)',
+            'card-foreground': 'oklch(0.95 0.01 240)',
+            primary: 'oklch(0.65 0.15 200)',
+            'primary-foreground': 'oklch(0.08 0.02 240)',
+            secondary: 'oklch(0.18 0.02 240)',
+            'secondary-foreground': 'oklch(0.95 0.01 240)',
+            muted: 'oklch(0.15 0.02 240)',
+            'muted-foreground': 'oklch(0.65 0.01 240)',
+            accent: 'oklch(0.55 0.18 180)',
+            'accent-foreground': 'oklch(0.08 0.02 240)',
+            border: 'oklch(0.22 0.02 240)',
+            input: 'oklch(0.18 0.02 240)',
+            ring: 'oklch(0.65 0.15 200)',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+        },
+      },
+    }
+  </script>
+  
+  <link rel="stylesheet" href="http://localhost:33119/webpage/css/styles.min.27cb3ae1275d5d7dd082ff6624386ee215ccc9a3af4c82b5514369f2e0d99daf.css">
 </head>
-    <div class="bgimg">
-        <video autoplay muted loop poster="poster.jpg">
-            
-                <source src="bg.mp4" type="video/mp4">
-            
-        </video>
-        
-        <div class="topleft">
-            
-                <p>Golang Venezuela</p>
-            
+<body class="font-sans antialiased">
+  
+<div class="min-h-screen bg-background">
+  
+  <header class="border-b border-border">
+    <div class="container mx-auto px-4 py-4">
+      <nav class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+            <span class="text-primary-foreground font-bold text-sm">Go</span>
+          </div>
+          <span class="text-xl font-bold">Golang Venezuela</span>
         </div>
-        <div class="middle">
-            
-                <h1>COMING SOON!</h1>
-            
-            <hr>
-            <p id="demo"></p>
-            <div id="countdown" data-release="May 3, 2025"></div>
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="#proyectos" class="text-muted-foreground hover:text-foreground transition-colors">
+            Proyectos
+          </a>
+          <a href="#comunidad" class="text-muted-foreground hover:text-foreground transition-colors">
+            Comunidad
+          </a>
+          <a href="#recursos" class="text-muted-foreground hover:text-foreground transition-colors">
+            Recursos
+          </a>
+          <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">Únete</button>
         </div>
-        <div class="bottomleft">
-            <p>
-            Falta poco para el lanzamiento de nuestra nueva web</p>
-        </div>
+      </nav>
     </div>
-    <div class="left">
-        
-        <section class="social-icons">
-            <ul class="social-icons-list">
-                
-                <li class="social-icon">
-                    
-                    <a href="https://github.com/Golang-Venezuela"
-                       >
-                        <img src="http://localhost:1313//svg/icons/github.svg" alt="test" />
-                    </a>
-                </li>
-                
-            </ul>
-        </section>
-        
-    </div>
-        <script src="/js/script.js"></script>
+  </header>
 
+  
+  <section class="py-20 px-4">
+    <div class="container mx-auto text-center">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-6xl md:text-8xl font-bold mb-6 text-balance">
+          aprende <span class="text-primary">golang</span> en español.
+        </h1>
+        <p class="text-xl md:text-2xl text-muted-foreground mb-8 text-pretty">
+          La comunidad venezolana dedicada a la difusión de Go. Compartimos información, creamos proyectos de
+          aprendizaje y resolvemos dudas juntos.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-8 py-6 text-lg">
+            <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+            <span>Explorar Proyectos</span>
+          </button>
+          <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border bg-transparent hover:bg-accent hover:text-accent-foreground h-10 px-8 py-6 text-lg">
+            <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+            <span>Únete a Telegram</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="py-16 px-4 bg-card">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="text-4xl font-bold text-primary mb-2">500+</div>
+          <div class="text-muted-foreground">Miembros Activos</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-accent mb-2">50+</div>
+          <div class="text-muted-foreground">Proyectos de Aprendizaje</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-primary mb-2">24/7</div>
+          <div class="text-muted-foreground">Resolución de Dudas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="proyectos" class="py-20 px-4">
+    <div class="container mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Proyectos de Aprendizaje</h2>
+        <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
+          Explora proyectos prácticos creados por la comunidad para aprender Go de forma colaborativa
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="rounded-lg border bg-card text-primary-foreground shadow-sm hover:shadow-lg transition-shadow">
+          <div class="flex flex-col space-y-1.5 p-6">
+            <div class="flex items-center justify-between mb-2">
+              <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">Principiante</span>
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold leading-none tracking-tight">CLI Tools Básicas</h3>
+            <p class="text-sm text-muted-foreground">
+              Proyectos de herramientas de línea de comandos para aprender los fundamentos
+            </p>
+          </div>
+          <div class="p-6 pt-0">
+            <ul class="space-y-2 text-sm text-muted-foreground mb-4">
+              <li>• Calculadora de terminal</li>
+              <li>• Generador de passwords</li>
+              <li>• Organizador de archivos</li>
+              <li>• Conversor de unidades</li>
+            </ul>
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 w-full">Ver en GitHub</button>
+          </div>
+        </div>
+
+        <div class="rounded-lg border bg-card text-primary-foreground shadow-sm hover:shadow-lg transition-shadow">
+          <div class="flex flex-col space-y-1.5 p-6">
+            <div class="flex items-center justify-between mb-2">
+              <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">Intermedio</span>
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold leading-none tracking-tight">APIs y Web Services</h3>
+            <p class="text-sm text-muted-foreground">Proyectos web para practicar desarrollo de APIs y servicios</p>
+          </div>
+          <div class="p-6 pt-0">
+            <ul class="space-y-2 text-sm text-muted-foreground mb-4">
+              <li>• API REST de tareas</li>
+              <li>• Sistema de autenticación</li>
+              <li>• Chat en tiempo real</li>
+              <li>• Microservicio de notificaciones</li>
+            </ul>
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 w-full">Ver en GitHub</button>
+          </div>
+        </div>
+
+        <div class="rounded-lg border bg-card text-primary-foreground shadow-sm hover:shadow-lg transition-shadow">
+          <div class="flex flex-col space-y-1.5 p-6">
+            <div class="flex items-center justify-between mb-2">
+              <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">Avanzado</span>
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold leading-none tracking-tight">Sistemas Distribuidos</h3>
+            <p class="text-sm text-muted-foreground">Proyectos complejos para explorar arquitecturas distribuidas</p>
+          </div>
+          <div class="p-6 pt-0">
+            <ul class="space-y-2 text-sm text-muted-foreground mb-4">
+              <li>• Sistema de cache distribuido</li>
+              <li>• Load balancer</li>
+              <li>• Message queue</li>
+              <li>• Monitoring system</li>
+            </ul>
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 w-full">Ver en GitHub</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="comunidad" class="py-20 px-4 bg-card">
+    <div class="container mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Nuestra Comunidad</h2>
+        <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
+          Únete a desarrolladores venezolanos apasionados por Go
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-2xl font-bold mb-6">¿Por qué Golang Venezuela?</h3>
+          <div class="space-y-4">
+            <div class="flex items-start space-x-3">
+              <svg class="h-6 w-6 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+              <div>
+                <h4 class="font-semibold mb-1">Comunidad Venezolana</h4>
+                <p class="text-muted-foreground">
+                  Comparte conocimiento con desarrolladores que entienden tu contexto y desafíos
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-3">
+              <svg class="h-5 w-5 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+              <div>
+                <h4 class="font-semibold mb-1">Difusión de Conocimiento</h4>
+                <p class="text-muted-foreground">
+                  Compartimos información, tutoriales y recursos en español sobre Go
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-3">
+              <svg class="h-5 w-5 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a4 4 0 11-8 0 4 4 0 018 0z"></path>
+              </svg>
+              <div>
+                <h4 class="font-semibold mb-1">Resolución de Dudas</h4>
+                <p class="text-muted-foreground">Obtén ayuda rápida de la comunidad para tus proyectos en Go</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-background rounded-lg p-8 border border-border">
+          <h3 class="text-xl font-bold mb-4">Únete Hoy</h3>
+          <p class="text-muted-foreground mb-6">
+            Participa en proyectos colaborativos, comparte conocimiento y conecta con la comunidad venezolana de Go.
+          </p>
+          <div class="space-y-3">
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 w-full px-4 py-2">
+              <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a4 4 0 11-8 0 4 4 0 018 0z"></path>
+              </svg>
+              <span>Únete a Telegram</span>
+            </button>
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border bg-transparent hover:bg-accent hover:text-accent-foreground h-10 w-full px-4 py-2">
+              <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+              </svg>
+              <span>Síguenos en GitHub</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="recursos" class="py-20 px-4">
+    <div class="container mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Recursos Gratuitos</h2>
+        <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
+          Herramientas y recursos para acelerar tu aprendizaje
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="rounded-lg border bg-card text-primary-foreground shadow-sm text-center hover:shadow-lg transition-shadow">
+          <div class="flex flex-col space-y-1.5 p-6">
+            <div class="text-primary mx-auto mb-4">
+              <svg class="h-12 w-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold leading-none tracking-tight">Guías Rápidas</h3>
+            <p class="text-sm text-muted-foreground">Referencias rápidas para sintaxis y patrones comunes</p>
+          </div>
+        </div>
+
+        <div class="rounded-lg border bg-card text-primary-foreground shadow-sm text-center hover:shadow-lg transition-shadow">
+          <div class="flex flex-col space-y-1.5 p-6">
+            <div class="text-accent mx-auto mb-4">
+              <svg class="h-12 w-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold leading-none tracking-tight">Ejemplos de Código</h3>
+            <p class="text-sm text-muted-foreground">Repositorio con ejemplos prácticos y casos de uso</p>
+          </div>
+        </div>
+
+        <div class="rounded-lg border bg-card text-primary-foreground shadow-sm text-center hover:shadow-lg transition-shadow">
+          <div class="flex flex-col space-y-1.5 p-6">
+            <div class="text-primary mx-auto mb-4">
+              <svg class="h-12 w-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold leading-none tracking-tight">Ejercicios</h3>
+            <p class="text-sm text-muted-foreground">Desafíos de programación para practicar tus habilidades</p>
+          </div>
+        </div>
+
+        <div class="rounded-lg border bg-card text-primary-foreground shadow-sm text-center hover:shadow-lg transition-shadow">
+          <div class="flex flex-col space-y-1.5 p-6">
+            <div class="text-accent mx-auto mb-4">
+              <svg class="h-12 w-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold leading-none tracking-tight">Blog Técnico</h3>
+            <p class="text-sm text-muted-foreground">Artículos sobre mejores prácticas y tendencias en Go</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="py-12 px-4 bg-card border-t border-border">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+              <span class="text-primary-foreground font-bold text-sm">Go</span>
+            </div>
+            <span class="text-xl font-bold">Golang Venezuela</span>
+          </div>
+          <p class="text-muted-foreground">Impulsando el desarrollo de software en Venezuela a través de Go.</p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Proyectos</h4>
+          <ul class="space-y-2 text-muted-foreground">
+            <li>
+              <a href="#" class="hover:text-foreground transition-colors">
+                CLI Tools
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-foreground transition-colors">
+                APIs Web
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-foreground transition-colors">
+                Microservicios
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-foreground transition-colors">
+                Sistemas Distribuidos
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Comunidad</h4>
+          <ul class="space-y-2 text-muted-foreground">
+            <li>
+              <a href="#" class="hover:text-foreground transition-colors">
+                Telegram
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-foreground transition-colors">
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-foreground transition-colors">
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-foreground transition-colors">
+                YouTube
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Recursos</h4>
+          <ul class="space-y-2 text-muted-foreground">
+            <li>
+              <a href="#" class="hover:text-foreground transition-colors">
+                Documentación
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-foreground transition-colors">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-foreground transition-colors">
+                Ejercicios
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-foreground transition-colors">
+                FAQ
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
+        <p>&copy; 2025 Golang Venezuela. Hecho con ❤️ para la comunidad venezolana de desarrolladores.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+</body>
 </html>
